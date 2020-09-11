@@ -7,7 +7,7 @@ const Form = (props) => {
 
     return(
         <>
-        <h1>Join the village!</h1>
+        <h2>Join Here!</h2>
         <form
             onSubmit={(e) => {
                 e.preventDefault()

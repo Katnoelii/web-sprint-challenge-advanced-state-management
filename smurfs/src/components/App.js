@@ -14,7 +14,7 @@ const App = props => {
 
     return (
       <div className="App">
-        <h1>Welcome to the Village!</h1>
+        <h1>::Welcome to the Village::</h1>
         {props.isLoading && <h2>Grabbing the villagers...</h2>}
         {props.error && <p className='error'>Woah! Hang on...it looks like there was an error, see? {props.error}</p>}
         <Form 
@@ -41,5 +41,5 @@ const mapStateToProps = (state) => {
     },
   }
 }
-
+//met MVP
 export default connect(mapStateToProps,{fetchData, addSmurf, handleChanges})(App);

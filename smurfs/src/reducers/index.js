@@ -1,5 +1,5 @@
 import {FETCH_DATA_START, FETCH_DATA_SUCCESS, FETCH_DATA_FAILURE, HANDLE_CHANGES} from '../actions'
-
+//for ease of access
 const initialState = {
 	isLoading: false,
 	smurfs: [],

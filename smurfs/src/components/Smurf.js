@@ -4,9 +4,9 @@ import './App.css'
 const Smurf = (props) => {
     return (
         <div className='smurfContainer'>
-            <h2>Name: {props.smurf.name}</h2>
-            <h3>Age: {props.smurf.age}</h3>
-            <h3>Height: {props.smurf.height}</h3>
+            <h3>Name: <span>{props.smurf.name}</span></h3>
+            <h5>Age: <span>{props.smurf.age}</span></h5>
+            <h5>Height: <span>{props.smurf.height}</span></h5>
         </div>
     )
 }
