@@ -24,10 +24,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What problem does the context API help solve?
+
+context API allows a child component to access a value in a parent. It solves the problem of prop drilling. 
+
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+Actions are represented by an object with a type and an optional payload. Reducers are functions that create new state in response to those actions, and The Redux Store acts as a central hub for state. They all work together to make state globally available with out mutating the state directly. 
+
 3. What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+Application state is available globally, while component state is tied to the component it resides in. The most efficient way to utilize is by only using app state for data you know are needed globally, and maintain component state for minor data that will only appear within that single component. 
+
 4. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+redux-thunk is a middleWare for redux that allows asynchronous actions like network requests to be dispatched to the store. It changes action creators so that an inner function returned from an outer function can allow the dispatch fundtion to referenced asynchronously
+
 5. What is your favorite state management system you've learned and this sprint? Please explain why!
+
+While I enjoy the simplicity of context, I think I prefer redux, solely for familiarity at this point. :)  I also believe redux is more widely accepted based on what i've heard! 
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
